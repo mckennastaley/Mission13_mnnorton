@@ -6,7 +6,7 @@ function TopBanner(props: any) {
     <>
       <div className="row">
         <div className="col-2">
-          <img src="./logo192.png" alt="logo"></img>
+          <img className="App-logo" src="./logo192.png" alt="logo"></img>
         </div>
         <div className="col align-self-center text-start">
           <h1 className={styles.h1}>{props.saying}</h1>
