@@ -6,12 +6,14 @@ namespace BetApt.Data
 	public class MarriottMovies
 	{
 			[Key]
-			public int movieID { get; set; }
-			public string ? category { get; set; }
-			public string ? director { get; set; }
-			public string ? title { get; set; }
-			public int ? year { get; set; }
-			public bool ? edited { get; set; }
-			public string ? rating { get; set; }
-	}
+			public int MovieID { get; set; }
+			public string ? Category { get; set; }
+			public string ? Director { get; set; }
+			public string ? Title { get; set; }
+			public int ? Year { get; set; }
+			public bool ? Edited { get; set; }
+			public string ? Rating { get; set; }
+			public string? LentTo { get; set; }
+			public string? Notes { get; set; }
+    }
 }
