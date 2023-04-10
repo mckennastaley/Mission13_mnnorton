@@ -26,5 +26,6 @@ namespace BetApt.Controllers
             var movies = _context.Movies.ToList();
             return movies;
         }
+
     }
 }
