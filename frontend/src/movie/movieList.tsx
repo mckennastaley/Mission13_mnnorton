@@ -21,10 +21,22 @@ function MovieList() {
             <th>Notes</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {movieData.map((m) => (
+            <tr key={m.MovieId}>
+              <td>{m.Title}</td>
+              <td>{m.Year}</td>
+              <td>{m.Director}</td>
+              <td>{m.Category}</td>
+              <td>{m.Rating}</td>
+              <td>{m.Edited}</td>
+              <td>{m.Notes}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </>
   );
 }
 
-export default MovieList();
+export default MovieList;
