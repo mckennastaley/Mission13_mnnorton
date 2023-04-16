@@ -4,12 +4,20 @@ import { movie } from '../types/movie';
 function MovieList() {
   const [movieData, setmovieData] = useState<movie[]>([]);
 
+  const fetchMovie = async () => {
+    const rsp = await fetch('https://localhost:7008/movie');
+    const temp = await rsp.json();
+    setmovieData(temp);
+  };
+
+  fetchMovie();
+
   return (
     <>
       <div className="row">
         <h4>The best movies in history!</h4>
       </div>
-      <table>
+      <table className="table table-bordered">
         <thead>
           <tr>
             <th>Title</th>

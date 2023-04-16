@@ -23,7 +23,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors(p => p.WithOrigins("https://localhost:3000"));
+app.UseCors(p => p.WithOrigins("http://localhost:3001"));
 
 app.UseHttpsRedirection();
 

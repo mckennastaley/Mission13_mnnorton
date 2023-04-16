@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import TopBanner from '../Blah';
-import MovieList from '../movies';
+import MovieList from '../movie/movieList';
 
 function App() {
   return (
