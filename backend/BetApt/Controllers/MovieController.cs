@@ -20,7 +20,6 @@ namespace BetApt.Controllers
             context = temp;
         }
 
-        [HttpGet]
         public IEnumerable<MarriottMovies> Get()
         {
             var movies = context.Movies.ToArray();
