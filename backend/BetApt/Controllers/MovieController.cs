@@ -13,17 +13,17 @@ namespace BetApt.Controllers
     [Route("[controller]")]
     public class MovieController : ControllerBase
     {
-        private readonly MoviesDbContext _context;
+        private readonly MoviesDbContext context;
 
-        public MovieController(MoviesDbContext context)
+        public MovieController(MoviesDbContext temp)
         {
-            _context = context;
+            context = temp;
         }
 
         [HttpGet]
         public IEnumerable<MarriottMovies> Get()
         {
-            var movies = _context.Movies.ToList();
+            var movies = context.Movies.ToArray();
             return movies;
         }
 
