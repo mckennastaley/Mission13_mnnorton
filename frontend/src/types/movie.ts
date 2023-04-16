@@ -1,4 +1,4 @@
-export typeof movie = {
+export type movie = {
   MovieId: number;
   Category: string;
   Director: string;
