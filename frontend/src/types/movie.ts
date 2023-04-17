@@ -1,10 +1,10 @@
 export type movie = {
-  MovieId: number;
-  Category: string;
-  Director: string;
-  Title: string;
-  Year: number;
-  Edited: boolean;
-  Rating: string;
-  Notes: string;
+  movieid: number;
+  category: string;
+  director: string;
+  title: string;
+  year: number;
+  edited: boolean;
+  rating: string;
+  notes: string;
 };
