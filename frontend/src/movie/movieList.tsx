@@ -1,16 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { movie } from '../types/movie';
 
 function MovieList() {
   const [movieData, setmovieData] = useState<movie[]>([]);
 
-  const fetchMovie = async () => {
-    const rsp = await fetch('https://localhost:7008/movie');
-    const temp = await rsp.json();
-    setmovieData(temp);
-  };
+  useEffect(() => {
+    const fetchMovie = async () => {
+      const rsp = await fetch('https://localhost:4000/movie');
+      const temp = await rsp.json();
+      setmovieData(temp);
+    };
 
-  fetchMovie();
+    fetchMovie();
+  }, []);
 
   return (
     <>
